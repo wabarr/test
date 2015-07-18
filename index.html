@@ -5,9 +5,9 @@
     $( document ).ready(function(){
       $("#click").click( function(e) {
         $.ajax({
-      		url: 'http://localhost:8000/taxa/',
+      		url: 'https://taxonomy.wabarr.com/taxa/',
           beforeSend: function(xhr) {
-              xhr.setRequestHeader("Authorization", 'Token 0ca7d6e363224139b9c0da8e173d8251e8b6bb7f');
+              xhr.setRequestHeader("Authorization", 'Token fc4114e3cce1d739cf1bc579553084b51b979131');
             },
       		method: 'POST',
           data: $("#submitform").serialize(),
