@@ -13,10 +13,10 @@
           data: $("#submitform").serialize(),
       		dataType: 'json',
       		success: function(data) {
-      			$("#resultsdiv").replaceWith("<h2>Thanks! Message sent.</h2>");
+      			$("#resultsdiv").html("<h2>Thanks! Data was POSTed.</h2>");
       		},
       		error: function(err) {
-      			$("#resultsdiv").replaceWith("There was an error.");
+      			$("#resultsdiv").html(<h2>"There was an error.</2>");
       		}
         });
       });
