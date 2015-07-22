@@ -12,6 +12,10 @@
       $("#ranktext").autocomplete({
         source: 'https://taxonomy.wabarr.com/API/ranks/',
       });
+      $("#parenttext").autocomplete({
+        source: 'https://taxonomy.wabarr.com/API/taxa/',
+      });
+      
       $("#click").click( function(e) {
         $.ajax({
       		url: 'https://taxonomy.wabarr.com/API/taxa/',
@@ -35,9 +39,10 @@
 
 <body>
 <form action="http://localhost:8000/taxa/" method="POST" id="submitform">
-  <input name="ref" placeholder="reference id" id="reftext"/>
+  <input name="ref" placeholder="reference" id="reftext"/>
   <input name="rank" placeholder="rank" id="ranktext" />
-  <input name="name" placeholder="taxonName" id="taxonname" />
+  <input name="parent" placeholder="parent taxon" id="parenttext" />
+  <input name="name" placeholder="taxon name" id="taxonname" />
 </form>
 <h1 id="click">Click Me</h1>
 <div id="resultsdiv"></div>
