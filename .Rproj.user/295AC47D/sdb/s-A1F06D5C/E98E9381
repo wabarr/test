@@ -1,0 +1,16 @@
+{
+    "contents" : "code {\n  white-space: pre;\n}\n\nul {\n  list-style-type: none;\n}\n\n",
+    "created" : 1438689774431.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1224276066",
+    "id" : "E98E9381",
+    "lastKnownWriteTime" : 1438689859,
+    "path" : "~/Desktop/test/assets/css/tweaks.css",
+    "project_path" : "assets/css/tweaks.css",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "css"
+}

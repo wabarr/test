@@ -1,0 +1,20 @@
+---
+layout: home
+title: Rmarkdown Knitr
+---
+
+<!-- All the heavy lifing for the index page is done by includes.  look at the home.html file in _layouts/ -->
+<section>
+    <div class="container">
+      <header class="major">
+        <h2>Welcome to this website!</h2>
+      </header>
+      <div class="row 12u">
+        <ul>
+        {% for post in site.posts %}
+          <li><a href={{post.url}}>{{post.title}}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+</section>

@@ -1,0 +1,33 @@
+<section id="two">
+  <div class="container">
+    <header class="major">
+      <div class="row">
+        <div class="12u">
+            <input type="text" placeholder="Search" name="bovid" id="autocomplete"/>
+
+            <div class="autocomplete-suggestions">
+                <div class="autocomplete-suggestion"></div>
+            </div>
+            <div id="searchresult"></div>
+        </div>
+      </div>
+    </header>
+  </div>
+</section>
+        <script>
+          document.addEventListener("DOMContentLoaded", function(event) {
+            $.getJSON("{{site.base_url}}/search.json",  setupAutoComplete)
+
+            function setupAutoComplete( data ) {
+              $('#autocomplete').autocomplete({
+                lookup: data,
+                onSelect: function (suggestion) {
+                    $("#searchresult").load(suggestion.url);
+                    $("#autocomplete").val(null);
+                  }
+                });
+              };
+
+
+          });
+        </script>

@@ -1,0 +1,16 @@
+{
+    "contents" : "# Site settings\ntitle: Learn Rstats\nemail: wabarr@gmail.com\ndescription: > # this means to ignore newlines until \"baseurl:\"\n Lear\nbaseurl: \"\" # the subpath of your site, e.g. /blog/\nurl: \"http://localhost:4321\" # the base hostname & protocol for your site\ntwitter_username: wabarree\ngithub_username:  wabarr\navatar : images/avatar.png\ntagline: Learn stats with R...fast!\nhighlighter: rouge\n\n# Build settings\nmarkdown: kramdown\n\n",
+    "created" : 1438603999769.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "942749195",
+    "id" : "F4A354A5",
+    "lastKnownWriteTime" : 1438690121,
+    "path" : "~/Desktop/test/_config.yml",
+    "project_path" : "_config.yml",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "text"
+}
