@@ -9,8 +9,3 @@ twitter_username: wabarree
 github_username:  wabarr
 avatar : images/avatar.png
 tagline: Learn stats with R...fast!
-highlighter: rouge
-
-# Build settings
-markdown: kramdown
-
