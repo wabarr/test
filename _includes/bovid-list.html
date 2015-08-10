@@ -1,0 +1,51 @@
+<!-- section two, included in the home.html layout -->
+	<section id="three">
+		<div class="container">
+			<header class="major">
+				<h2>Browse Bovids</h2>
+				{% capture categories %}
+	  				{% for category in site.categories %}
+	    				{{ category[0] }}
+	  				{% endfor %}
+					{% endcapture %}
+
+					{% assign sortedcategories = categories | split:' ' | sort %}
+
+					{% for category in sortedcategories %}
+
+
+	  				<div class="row tribeContainer">
+							<div class="6u">
+								<h4 id="{{ category }}">{{ category | replace:'_',' ' | capitalize }} &nbsp;
+									<a class="icon fa-plus toggleTribe"><span class="label">tribe</span></a>
+								</h4>
+							</div>
+							<div class="6u">
+								<ul class="tribe">
+		  						{% for post in site.categories[category] %}
+		    						<li class="bovidListElement"><a class='bovidLink' href="{{ post.url }}">{{ post.commonname | capitalize }} (<i>{{ post.binomial | replace:"_"," "}}</i>)</a></li>
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+					{% endfor %}
+			</header>
+		</div>
+	</section>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function(event) {
+			$(".bovidLink").click(function(e){
+				e.preventDefault();
+				$("#searchresult").load($(this).attr('href'))
+				$('html, body').animate({
+        	scrollTop: $("#searchresult").offset().top
+				}, 1000);
+			});
+			$(".tribe").hide()
+			$(".toggleTribe").click(function(){
+				$(this).toggleClass("fa-minus fa-plus")
+				$(this).parents(".tribeContainer").find(".tribe").toggle();
+			});
+		});
+	</script>

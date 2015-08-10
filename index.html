@@ -1,50 +1,20 @@
-<html>
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-  
-  <script>
-    $( document ).ready(function(){
-      $("#reftext").autocomplete({
-        source: 'https://taxonomy.wabarr.com/API/references/',
-      });
-      $("#ranktext").autocomplete({
-        source: 'https://taxonomy.wabarr.com/API/ranks/',
-      });
-      $("#parenttext").autocomplete({
-        source: 'https://taxonomy.wabarr.com/API/taxa/',
-      });
-      
-      $("#click").click( function(e) {
-        $.ajax({
-      		url: 'https://taxonomy.wabarr.com/API/taxa/',
-          beforeSend: function(xhr) {
-              xhr.setRequestHeader("Authorization", 'Token c5c880a2dd862dd1563a918a77157ded12cc11bd');
-            },
-      		method: 'POST',
-          data: $("#submitform").serialize(),
-      		dataType: 'json',
-      		success: function(data) {
-      			$("#resultsdiv").html("<h2>Thanks! Data was POSTed.</h2>");
-      		},
-      		error: function(err) {
-      			$("#resultsdiv").html("<h2>There was an error.</h2>");
-      		}
-        });
-      });
-    });
-  </script>
-</head>
+---
+layout: home
+title: Rmarkdown Knitr
+---
 
-<body>
-<form action="http://localhost:8000/taxa/" method="POST" id="submitform">
-  <input name="ref" placeholder="reference" id="reftext"/>
-  <input name="rank" placeholder="rank" id="ranktext" />
-  <input name="parent" placeholder="parent taxon" id="parenttext" />
-  <input name="name" placeholder="taxon name" id="taxonname" />
-</form>
-<h1 id="click">Click Me</h1>
-<div id="resultsdiv"></div>
-</body>
-</html>
+<!-- All the heavy lifing for the index page is done by includes.  look at the home.html file in _layouts/ -->
+<section>
+    <div class="container">
+      <header class="major">
+        <h2>Welcome to this website!</h2>
+      </header>
+      <div class="row 12u">
+        <ul>
+        {% for post in site.posts %}
+          <li><a href={{post.url}}>{{post.title}}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+</section>

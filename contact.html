@@ -1,0 +1,56 @@
+---
+layout: home
+permalink: /contact/
+---
+
+<!-- section three, included in the home.html layout -->
+  <section id="four">
+    <div class="container">
+      <header class="major">
+        <div id="contact-container">
+          <h2>Contact Us</h2>
+          <form id="contact-form">
+  							<div class="row uniform">
+									<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+									<div class="6u 12u(xsmall)"><input type="email" name="_replyto" id="email" placeholder="Email" /></div>
+								</div>
+								<div class="row uniform">
+									<div class="12u"><input type="text" name="_subject" id="subject" placeholder="Subject" /></div>
+								</div>
+								<div class="row uniform">
+									<div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+								</div>
+								<div class="row uniform">
+									<div class="12u">
+										<ul class="actions">
+											<li><input type="submit" class="special" id="submit-button" value="Send Message" /></li>
+											<li><input type="reset" value="Reset Form" /></li>
+                      <input type="text" name="_gotcha" style="display:none" /> <!--This field is a honeypot to attract spambots-->
+										</ul>
+									</div>
+								</div>
+						</form>
+          </div>
+      </header>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      $('#submit-button').click(function(e) {
+        e.preventDefault();
+      	$.ajax({
+      		url: '//formspree.io/wabarr@gmail.com',
+      		method: 'POST',
+      		data: $("#contact-form").serialize(),
+      		dataType: 'json',
+      		success: function(data) {
+      			$("#contact-container").replaceWith("<h2>Thanks! Message sent.</h2>");
+      		},
+      		error: function(err) {
+      			$("#contact-form").append("There was an error.");
+      		}
+        });
+      });
+    });
+  </script>
