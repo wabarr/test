@@ -4,10 +4,10 @@
     <title>Learn Rstats</title>
     <description>Learn R for statistics, data visualization, and data science.
 </description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 Aug 2015 16:34:11 -0400</pubDate>
-    <lastBuildDate>Tue, 11 Aug 2015 16:34:11 -0400</lastBuildDate>
+    <link>http://localhost:4321//</link>
+    <atom:link href="http://localhost:4321//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 11 Aug 2015 16:44:35 -0400</pubDate>
+    <lastBuildDate>Tue, 11 Aug 2015 16:44:35 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -18,39 +18,27 @@
 
 &lt;p&gt;You definnitely want to be using ggplot2.  It is the balls!&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;r
-library(ggplot2)
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;kn&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;ggplot2&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code&gt;
-## Loading required package: methods
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;## Loading required package: methods&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code&gt;r
-qplot(rnorm(1000))
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;qplot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;rnorm&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code&gt;
-## stat_bin: binwidth defaulted to range/30. Use &#39;binwidth = x&#39; to adjust this.
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;## stat_bin: binwidth defaulted to range/30. Use &amp;#39;binwidth = x&amp;#39; to adjust this.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/figure/source/2015-08-01-test-post/unnamed-chunk-1-1.png&quot; alt=&quot;plot of chunk unnamed-chunk-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;figure/source/2015-08-01-test-post/unnamed-chunk-1-1.png&quot; alt=&quot;plot of chunk unnamed-chunk-1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Change up the theme and everything, man!&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;r
-qplot(rnorm(1000), color=I(&quot;white&quot;)) + theme_bw(25)
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;qplot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;rnorm&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; color&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;white&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; theme_bw&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code&gt;
-## stat_bin: binwidth defaulted to range/30. Use &#39;binwidth = x&#39; to adjust this.
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;## stat_bin: binwidth defaulted to range/30. Use &amp;#39;binwidth = x&amp;#39; to adjust this.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/figure/source/2015-08-01-test-post/unnamed-chunk-2-1.png&quot; alt=&quot;plot of chunk unnamed-chunk-2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;figure/source/2015-08-01-test-post/unnamed-chunk-2-1.png&quot; alt=&quot;plot of chunk unnamed-chunk-2&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
-        <link>/2015/08/01/test-post.html</link>
-        <guid isPermaLink="true">/2015/08/01/test-post.html</guid>
+        <link>http://localhost:4321//2015/08/01/test-post.html</link>
+        <guid isPermaLink="true">http://localhost:4321//2015/08/01/test-post.html</guid>
         
         
       </item>

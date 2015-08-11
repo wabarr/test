@@ -3,7 +3,8 @@ title: Learn Rstats
 email: wabarr@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
  Learn R for statistics, data visualization, and data science.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl:  # the subpath of your site, e.g. /blog/
+url: personaltest.wabarr.com
 twitter_username: wabarree
 github_username:  wabarr
 avatar : images/avatar.png

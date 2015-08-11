@@ -72,35 +72,23 @@
 
 <p>You definnitely want to be using ggplot2.  It is the balls!</p>
 
-<p><code>r
-library(ggplot2)
-</code></p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kn">library</span><span class="p">(</span>ggplot2<span class="p">)</span></code></pre></div>
 
-<p><code>
-## Loading required package: methods
-</code></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">## Loading required package: methods</code></pre></div>
 
-<p><code>r
-qplot(rnorm(1000))
-</code></p>
+<div class="highlight"><pre><code class="language-r" data-lang="r">qplot<span class="p">(</span>rnorm<span class="p">(</span><span class="m">1000</span><span class="p">))</span></code></pre></div>
 
-<p><code>
-## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
-</code></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">## stat_bin: binwidth defaulted to range/30. Use &#39;binwidth = x&#39; to adjust this.</code></pre></div>
 
-<p><img src="/figure/source/2015-08-01-test-post/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1" /></p>
+<p><img src="figure/source/2015-08-01-test-post/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1" /></p>
 
 <p>Change up the theme and everything, man!</p>
 
-<p><code>r
-qplot(rnorm(1000), color=I("white")) + theme_bw(25)
-</code></p>
+<div class="highlight"><pre><code class="language-r" data-lang="r">qplot<span class="p">(</span>rnorm<span class="p">(</span><span class="m">1000</span><span class="p">),</span> color<span class="o">=</span><span class="kp">I</span><span class="p">(</span><span class="s">&quot;white&quot;</span><span class="p">))</span> <span class="o">+</span> theme_bw<span class="p">(</span><span class="m">25</span><span class="p">)</span></code></pre></div>
 
-<p><code>
-## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
-</code></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">## stat_bin: binwidth defaulted to range/30. Use &#39;binwidth = x&#39; to adjust this.</code></pre></div>
 
-<p><img src="/figure/source/2015-08-01-test-post/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2" /></p>
+<p><img src="figure/source/2015-08-01-test-post/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2" /></p>
 
       </div>
     </div>
