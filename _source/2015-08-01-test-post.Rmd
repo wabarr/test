@@ -7,28 +7,18 @@ output: html_document
 ---
 
 <header class='major'>
-  <h2>Test Post</h2>
+  <h2>Using ggplot2</h2>
 </header>
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+You definnitely want to be using ggplot2.  It is the balls!
 
 ```{r}
-summary(cars)
+library(ggplot2)
+qplot(rnorm(1000))
 ```
 
-You can also embed plots, for example:
+Change up the theme and everything, man!
 
 ```{r}
-plot(cars, main="hello")
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
-
-## More code
-
-```{r}
-rnorm(100)
+qplot(rnorm(1000), color=I("white")) + theme_bw(25)
 ```
