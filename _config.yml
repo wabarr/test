@@ -2,8 +2,8 @@
 title: Learn Rstats
 email: wabarr@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
- Lear
-baseurl: "/test/" # the subpath of your site, e.g. /blog/
+ Learn R for statistics, data visualization, and data science.
+base_url: "/test/" # the subpath of your site, e.g. /blog/
 url: "http://wabarr.github.io/" # the base hostname & protocol for your site
 twitter_username: wabarree
 github_username:  wabarr

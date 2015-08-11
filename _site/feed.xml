@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Learn Rstats</title>
-    <description>Lear
+    <description>Learn R for statistics, data visualization, and data science.
 </description>
-    <link>http://localhost:4321/</link>
-    <atom:link href="http://localhost:4321/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 Aug 2015 16:38:49 -0400</pubDate>
-    <lastBuildDate>Mon, 10 Aug 2015 16:38:49 -0400</lastBuildDate>
+    <link>https://localhost:4321//</link>
+    <atom:link href="https://localhost:4321//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 11 Aug 2015 10:29:42 -0400</pubDate>
+    <lastBuildDate>Tue, 11 Aug 2015 10:29:42 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Sat, 01 Aug 2015 11:11:48 -0400</pubDate>
-        <link>http://localhost:4321/jekyll/update/2015/08/01/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4321/jekyll/update/2015/08/01/welcome-to-jekyll.html</guid>
+        <link>https://localhost:4321//jekyll/update/2015/08/01/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://localhost:4321//jekyll/update/2015/08/01/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
@@ -69,8 +69,8 @@ summary(cars)
 &lt;p&gt;Note that the &lt;code&gt;echo = FALSE&lt;/code&gt; parameter was added to the code chunk to prevent printing of the R code that generated the plot.&lt;/p&gt;
 </description>
         <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
-        <link>http://localhost:4321/2015/08/01/test-post.html</link>
-        <guid isPermaLink="true">http://localhost:4321/2015/08/01/test-post.html</guid>
+        <link>https://localhost:4321//2015/08/01/test-post.html</link>
+        <guid isPermaLink="true">https://localhost:4321//2015/08/01/test-post.html</guid>
         
         
       </item>
