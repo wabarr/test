@@ -1,8 +1,22 @@
-code {
-  white-space: pre;
-}
 
 ul {
   list-style-type: none;
 }
 
+
+
+
+div.highlight {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+code[data-lang="r"] {
+  color: blue;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+img { 
+  max-width:100%; 
+  height: auto; 
+}
