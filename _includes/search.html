@@ -16,7 +16,7 @@
 </section>
         <script>
           document.addEventListener("DOMContentLoaded", function(event) {
-            $.getJSON("{{site.base_url}}/search.json",  setupAutoComplete)
+            $.getJSON("{{site.baseurl}}/search.json",  setupAutoComplete)
 
             function setupAutoComplete( data ) {
               $('#autocomplete').autocomplete({
